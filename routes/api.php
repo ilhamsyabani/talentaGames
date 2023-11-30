@@ -23,10 +23,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/Students', [StudentController::class, 'index']);
 Route::get('/Students/{id}', [StudentController::class, 'show']);
 Route::post('/Students', [StudentController::class, 'store']);
-Route::put('/Students/{id}', [StudentController::class, 'update']);
-Route::delete('/Students/{id}', [StudentController::class, 'destroy']);
+// Route::put('/Students/{id}', [StudentController::class, 'update']);
+// Route::delete('/Students/{id}', [StudentController::class, 'destroy']);
 Route::get('/Nilai', [NilaiController::class, 'index']);
 Route::get('/Nilai/{id}', [NilaiController::class, 'show']);
 Route::post('/Nilai', [NilaiController::class, 'store']);
-Route::put('/Nilai/{id}', [NilaiController::class, 'update']);
-Route::delete('/Nilai/{id}', [NilaiController::class, 'destroy']);
+// Route::put('/Nilai/{id}', [NilaiController::class, 'update']);
+// Route::delete('/Nilai/{id}', [NilaiController::class, 'destroy']);
